@@ -6,13 +6,15 @@ const App = () => {
   return (
     <div className="App">
       <CollapsibleSection title="Main Section">
-        <CollapsibleSection 
-        title="Nested Section 1"
-        content="This section has content but no nested sections."
-        />
-        <CollapsibleSection 
-        title="Nested Section 2"
-        content="This section has content but no nested sections."
+        <CollapsibleSection title="Nested Section 1">
+          <CollapsibleSection
+            title="Nested Section 2"
+            content="This section has content but no nested sections."
+          />
+        </CollapsibleSection>
+        <CollapsibleSection
+          title="Nested Section 2"
+          content="This section has content but no nested sections."
         />
         <CollapsibleSection
           title="Nested Section 3"

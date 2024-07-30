@@ -3,7 +3,7 @@
   margin: 20px auto;
   padding: 0;
   border-radius: 8px;
-  width: 900px;
+  width: 800px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,6 @@
 .nested-sections {
   padding: 0;
   margin: 0;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -21,6 +20,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .collapsible-header {
@@ -56,7 +56,7 @@
 }
 
 .collapsible-content {
-  padding: auto 20px;
+  padding: 20px;
   width: 100%;
   box-sizing: border-box;
   animation: fadeIn 0.3s ease-in-out;
@@ -76,7 +76,6 @@
     opacity: 1;
   }
 }
-
 
 @media (max-width: 768px) {
   .collapsible-section {
@@ -98,7 +97,7 @@
 
 @media (max-width: 480px) {
   .collapsible-section {
-    width: 80%;
+    width: 90%;
   }
 
   .collapsible-header {
@@ -115,5 +114,27 @@
 
   .collapsible-content {
     padding: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .collapsible-section {
+    width: 100%;
+  }
+
+  .collapsible-header {
+    padding: 8px;
+  }
+
+  .collapsible-header h3 {
+    font-size: 12px;
+  }
+
+  .collapsible-header button {
+    font-size: 12px;
+  }
+
+  .collapsible-content {
+    padding: 8px;
   }
 }
