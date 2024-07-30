@@ -1,0 +1,90 @@
+{
+    "Domains": [
+      { "title": ".COM", "price": "$5.99/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".AI", "price": "$55.99/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".NET", "price": "$7.99/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".HEALTH", "price": "$7.99/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".CO.UK", "price": "$3.99/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".ORG", "price": "$15.99/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".CO", "price": "$26.33/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".SEA", "price": "$26.33/yr", "oldPrice": "$10.99/yr" },
+      { "title": ".STORE", "price": "$9.99/yr", "oldPrice": "$14.99/yr" },
+      { "title": ".TECH", "price": "$19.99/yr", "oldPrice": "$29.99/yr" }
+    ],
+    "Web Hosting": [
+      { "title": "Basic Plan", "price": "$3.99/mo", "oldPrice": "$5.99/mo" },
+      { "title": "Premium Plan", "price": "$7.99/mo", "oldPrice": "$10.99/mo" },
+      { "title": "Pro Plan", "price": "$12.99/mo", "oldPrice": "$15.99/mo" },
+      { "title": "Starter Plan", "price": "$2.99/mo", "oldPrice": "$4.99/mo" },
+      { "title": "Advanced Plan", "price": "$9.99/mo", "oldPrice": "$14.99/mo" },
+      { "title": "Unlimited Plan", "price": "$19.99/mo", "oldPrice": "$24.99/mo" },
+      { "title": "Business Plan", "price": "$24.99/mo", "oldPrice": "$29.99/mo" },
+      { "title": "Enterprise Plan", "price": "$49.99/mo", "oldPrice": "$59.99/mo" },
+      { "title": "Developer Plan", "price": "$34.99/mo", "oldPrice": "$39.99/mo" },
+      { "title": "Custom Plan", "price": "$99.99/mo", "oldPrice": "$119.99/mo" }
+    ],
+    "Dedicated Servers": [
+      { "title": "Starter Server", "price": "$99.99/mo", "oldPrice": "$129.99/mo" },
+      { "title": "Pro Server", "price": "$199.99/mo", "oldPrice": "$229.99/mo" },
+      { "title": "Advanced Server", "price": "$299.99/mo", "oldPrice": "$349.99/mo" },
+      { "title": "Enterprise Server", "price": "$399.99/mo", "oldPrice": "$449.99/mo" },
+      { "title": "Ultimate Server", "price": "$499.99/mo", "oldPrice": "$599.99/mo" },
+      { "title": "Basic Server", "price": "$89.99/mo", "oldPrice": "$109.99/mo" },
+      { "title": "Business Server", "price": "$259.99/mo", "oldPrice": "$299.99/mo" },
+      { "title": "Custom Server", "price": "$599.99/mo", "oldPrice": "$699.99/mo" },
+      { "title": "Developer Server", "price": "$149.99/mo", "oldPrice": "$179.99/mo" },
+      { "title": "Small Business Server", "price": "$179.99/mo", "oldPrice": "$209.99/mo" }
+    ],
+    "Virtual Cloud Servers": [
+      { "title": "Basic Cloud", "price": "$9.99/mo", "oldPrice": "$14.99/mo" },
+      { "title": "Pro Cloud", "price": "$19.99/mo", "oldPrice": "$24.99/mo" },
+      { "title": "Advanced Cloud", "price": "$29.99/mo", "oldPrice": "$39.99/mo" },
+      { "title": "Enterprise Cloud", "price": "$49.99/mo", "oldPrice": "$59.99/mo" },
+      { "title": "Ultimate Cloud", "price": "$69.99/mo", "oldPrice": "$79.99/mo" },
+      { "title": "Starter Cloud", "price": "$7.99/mo", "oldPrice": "$12.99/mo" },
+      { "title": "Developer Cloud", "price": "$34.99/mo", "oldPrice": "$44.99/mo" },
+      { "title": "Custom Cloud", "price": "$99.99/mo", "oldPrice": "$119.99/mo" },
+      { "title": "Business Cloud", "price": "$59.99/mo", "oldPrice": "$69.99/mo" },
+      { "title": "Small Business Cloud", "price": "$24.99/mo", "oldPrice": "$29.99/mo" }
+    ],
+    "WordPress Hosting": [
+      { "title": "Starter WP", "price": "$4.99/mo", "oldPrice": "$7.99/mo" },
+      { "title": "Pro WP", "price": "$12.99/mo", "oldPrice": "$15.99/mo" },
+      { "title": "Advanced WP", "price": "$19.99/mo", "oldPrice": "$24.99/mo" },
+      { "title": "Enterprise WP", "price": "$29.99/mo", "oldPrice": "$34.99/mo" },
+      { "title": "Ultimate WP", "price": "$39.99/mo", "oldPrice": "$44.99/mo" },
+      { "title": "Basic WP", "price": "$3.99/mo", "oldPrice": "$5.99/mo" },
+      { "title": "Developer WP", "price": "$24.99/mo", "oldPrice": "$29.99/mo" },
+      { "title": "Custom WP", "price": "$49.99/mo", "oldPrice": "$59.99/mo" },
+      { "title": "Business WP", "price": "$34.99/mo", "oldPrice": "$39.99/mo" },
+      { "title": "Small Business WP", "price": "$14.99/mo", "oldPrice": "$19.99/mo" }
+    ],
+    "Email Hosting": [
+      { "title": "Basic Email", "price": "$2.99/mo", "oldPrice": "$4.99/mo" },
+      { "title": "Premium Email", "price": "$5.99/mo", "oldPrice": "$9.99/mo" },
+      { "title": "Pro Email", "price": "$9.99/mo", "oldPrice": "$14.99/mo" },
+      { "title": "Advanced Email", "price": "$14.99/mo", "oldPrice": "$19.99/mo" },
+      { "title": "Enterprise Email", "price": "$19.99/mo", "oldPrice": "$24.99/mo" },
+      { "title": "Ultimate Email", "price": "$29.99/mo", "oldPrice": "$34.99/mo" },
+      { "title": "Starter Email", "price": "$1.99/mo", "oldPrice": "$3.99/mo" },
+      { "title": "Developer Email", "price": "$12.99/mo", "oldPrice": "$15.99/mo" },
+      { "title": "Custom Email", "price": "$24.99/mo", "oldPrice": "$29.99/mo" },
+      { "title": "Business Email", "price": "$4.99/mo", "oldPrice": "$7.99/mo" }
+    ],
+    "VPS Hosting Servers": [
+      { "title": "VPS Basic", "price": "$14.99/mo", "oldPrice": "$19.99/mo" },
+      { "title": "VPS Pro", "price": "$29.99/mo", "oldPrice": "$39.99/mo" },
+      { "title": "VPS Advanced", "price": "$39.99/mo", "oldPrice": "$49.99/mo" },
+      { "title": "VPS Enterprise", "price": "$49.99/mo", "oldPrice": "$59.99/mo" },
+      { "title": "VPS Ultimate", "price": "$59.99/mo", "oldPrice": "$69.99/mo" },
+      { "title": "VPS Starter", "price": "$9.99/mo", "oldPrice": "$14.99/mo" },
+      { "title": "VPS Developer", "price": "$34.99/mo", "oldPrice": "$44.99/mo" },
+      { "title": "VPS Custom", "price": "$69.99/mo", "oldPrice": "$79.99/mo" },
+      { "title": "VPS Business", "price": "$24.99/mo", "oldPrice": "$29.99/mo" },
+      { "title": "VPS Small Business", "price": "$19.99/mo", "oldPrice": "$24.99/mo" }
+    ],
+    "Free Hosting": [
+      { "title": "Free Tier", "price": "$0.00/mo", "oldPrice": "$0.00/mo" }
+    ]
+  }
+  
