@@ -1,16 +1,16 @@
-import React from 'react';
-import TabsComponent from './TabsComponent';
-import './App.css';  // Ensure you have this file for global styles if needed
+import React, { useState } from 'react';
+import TabsComponent from './components/TabsComponent';
+import CardList from './components/CardList';
+import './App.css';
+import cardData from './Data.json';
 
 const App = () => {
-  const tabs = ['Tab 1', 'Tab 2', 'Tab 3'];  // Example tabs
-  const handleSelect = (index) => {
-    console.log(`Selected tab index: ${index}`);
-  };
+  const [selectedTab, setSelectedTab] = useState('Domains');
 
   return (
-    <div className="app">
-      <TabsComponent tabs={tabs} onSelect={handleSelect} />
+    <div>
+      <TabsComponent tabs={Object.keys(cardData)} onSelect={index => setSelectedTab(Object.keys(cardData)[index])} />
+      <CardList cards={cardData[selectedTab]} />
     </div>
   );
 };

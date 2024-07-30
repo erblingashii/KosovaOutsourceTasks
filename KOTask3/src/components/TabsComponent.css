@@ -9,7 +9,7 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: none;
+  background-color: transparent; /* Adjust if needed */
   list-style-type: none;
   border: none;
 }
@@ -43,7 +43,7 @@
   z-index: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
   .react-tabs__tab-list {
     display: none;
     flex-direction: column;

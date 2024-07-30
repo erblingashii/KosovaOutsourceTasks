@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './CollapsibleSection.css'; // Import the CSS
-
+import './CollapsibleSection.css';
 const CollapsibleSection = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 

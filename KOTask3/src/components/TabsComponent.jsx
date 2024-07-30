@@ -17,12 +17,13 @@ const TabsComponent = ({ tabs, onSelect }) => {
       <Tabs onSelect={onSelect}>
         <TabList className={`react-tabs__tab-list ${isMenuOpen ? 'open' : ''}`}>
           {tabs.map((tabName, index) => (
-            <Tab key={index}>{tabName}</Tab>
+            <Tab key={index} className="react-tabs__tab">
+              {tabName}
+            </Tab>
           ))}
         </TabList>
         {tabs.map((tabName, index) => (
           <TabPanel key={index}>
-            <div>{`Content for ${tabName}`}</div>
           </TabPanel>
         ))}
       </Tabs>
