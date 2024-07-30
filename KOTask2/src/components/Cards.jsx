@@ -13,6 +13,7 @@ const Cards = ({ cardData }) => {
                     status={data.status}
                     programmer={data.programmer}
                     description={data.description}
+                    programmerImage={data.programmerImage}
                 />
             ))}
         </div>
