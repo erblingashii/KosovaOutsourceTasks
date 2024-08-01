@@ -6,6 +6,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .data-container {
@@ -13,11 +15,11 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
-    margin: 10px;
+    width: 100%;
+    padding: 10px;
     gap: 10px;
     box-sizing: border-box;
 }
-
 
 .data-item {
     display: flex;
@@ -75,6 +77,10 @@ body, html {
 }
 
 @media (max-width: 480px) {
+    .data-container {
+        gap: 0;
+    }
+
     .data-item {
         flex: 1 1 100%;
     }
@@ -91,5 +97,11 @@ body, html {
 
     .data-description {
         font-size: 0.6em;
+    }
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+    body {
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     }
 }
