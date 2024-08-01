@@ -79,8 +79,6 @@ body, html {
 @media (max-width: 480px) {
     .data-container {
         gap: 0;
-        height: 80vh;
-        border: 1px solid black;
     }
 
     .data-item {
