@@ -6,10 +6,8 @@
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: transparent; /* Adjust if needed */
+  margin: 20px 0px 20px;
+  background-color: transparent;
   list-style-type: none;
   border: none;
   flex-wrap: wrap;
