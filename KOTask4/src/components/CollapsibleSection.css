@@ -73,6 +73,10 @@
     font-size: 16px;
   }
 
+  .collapsible-content p {
+    font-size: 14px;
+  }
+
   .collapsible-header button {
     font-size: 16px;
   }
@@ -99,6 +103,10 @@
     font-size: 14px;
   }
 
+  .collapsible-content p {
+    font-size: 12px;
+  }
+
   .collapsible-header button {
     font-size: 14px;
   }
@@ -123,6 +131,10 @@
 
   .collapsible-header h3 {
     font-size: 14px;
+  }
+
+  .collapsible-content p {
+    font-size: 12px;
   }
 
   .collapsible-header button {
