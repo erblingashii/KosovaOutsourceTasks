@@ -18,7 +18,6 @@
   padding: 15px 20px;
   cursor: pointer;
   background-color: #f9f9f9;
-  border-bottom: 1px solid #ddd;
   width: 100%;
   box-sizing: border-box;
 }
@@ -39,19 +38,21 @@
 }
 
 .collapsible-header button.open {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .collapsible-content {
-  padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  animation: fadeIn 0.3s ease-in-out;
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .collapsible-content.open {
-  display: block;
+  max-height: 500px; /* Set this to a value large enough to fit your content */
+  padding: 20px;
 }
 
 @keyframes fadeIn {
@@ -77,6 +78,10 @@
   }
 
   .collapsible-content {
+    padding: 0 15px;
+  }
+
+  .collapsible-content.open {
     padding: 15px;
   }
 }
@@ -99,6 +104,10 @@
   }
 
   .collapsible-content {
+    padding: 0 10px;
+  }
+
+  .collapsible-content.open {
     padding: 10px;
   }
 }
@@ -121,6 +130,10 @@
   }
 
   .collapsible-content {
+    padding: 0;
+  }
+
+  .collapsible-content.open {
     padding: 0;
   }
 }
