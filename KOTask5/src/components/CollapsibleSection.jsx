@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CollapsibleSection.css';
 
-const CollapsibleSection = ({ title, content, children }) => {
+const CollapsibleSection = ({ title, content, children, imgSrc }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSection = () => {
@@ -11,6 +11,7 @@ const CollapsibleSection = ({ title, content, children }) => {
   return (
     <div className="collapsible-section">
       <div className="collapsible-header" onClick={toggleSection}>
+        {imgSrc && <img src={imgSrc} alt="icon" className="collapsible-icon" />}
         <h3>{title}</h3>
         <button className={isOpen ? 'open' : ''}>{isOpen ? '▲' : '▼'}</button>
       </div>

@@ -1,26 +1,13 @@
 .collapsible-section {
   border: 1px solid #ddd;
-  margin: 20px auto;
+  margin: auto;
   padding: 0;
   border-radius: 8px;
-  width: 800px;
+  width: 100%;
+  max-width: 900px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
-
-.nested-sections {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.nested-sections > .collapsible-section {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .collapsible-header {
@@ -30,16 +17,22 @@
   align-items: center;
   padding: 15px 20px;
   cursor: pointer;
-  background-color: #f7f6f6;
-  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
   width: 100%;
   box-sizing: border-box;
+}
+
+.collapsible-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .collapsible-header h3 {
   margin: 0;
   font-size: 18px;
   font-weight: normal;
+  flex-grow: 1; /* Ensures h3 takes available space */
 }
 
 .collapsible-header button {
@@ -52,20 +45,21 @@
 }
 
 .collapsible-header button.open {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .collapsible-content {
-  padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  animation: fadeIn 0.3s ease-in-out;
-  display: none;
   overflow: hidden;
+  max-height: 0;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .collapsible-content.open {
-  display: block;
+  max-height: 500px; /* Set this to a value large enough to fit your content */
+  padding: 20px;
 }
 
 @keyframes fadeIn {
@@ -91,6 +85,10 @@
   }
 
   .collapsible-content {
+    padding: 0 15px;
+  }
+
+  .collapsible-content.open {
     padding: 15px;
   }
 }
@@ -113,28 +111,36 @@
   }
 
   .collapsible-content {
+    padding: 0 10px;
+  }
+
+  .collapsible-content.open {
     padding: 10px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 300px) {
   .collapsible-section {
     width: 100%;
   }
 
   .collapsible-header {
-    padding: 8px;
+    padding: 0;
   }
 
   .collapsible-header h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .collapsible-header button {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .collapsible-content {
-    padding: 8px;
+    padding: 0;
+  }
+
+  .collapsible-content.open {
+    padding: 0;
   }
 }

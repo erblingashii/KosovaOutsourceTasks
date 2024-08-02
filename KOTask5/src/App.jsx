@@ -8,9 +8,11 @@ const App = () => {
       <CollapsibleSection title="Main Section">
         <CollapsibleSection title="Nested Section 1">
           <CollapsibleSection
-            title="Nested Section 2"
-            content="This section has content but no nested sections."
+            title="Section Title"
+            content="This is the content of the section."
+            imgSrc="/vite.svg"
           />
+
         </CollapsibleSection>
         <CollapsibleSection
           title="Nested Section 2"
