@@ -24,6 +24,14 @@ function App() {
     setColors(newColors);
   };
 
+  const colorInfo = [
+    { label: 'Font Color', value: colors.fontColor },
+    { label: 'Background Color', value: colors.backgroundColor },
+    { label: 'Button Color', value: colors.buttonColor },
+    { label: 'Button Border Color', value: colors.buttonBorderColor },
+    { label: 'Mouseover Color', value: colors.buttonsMouseoverColor },
+  ];
+
   return (
     <div className="App">
       <button className="show-popup-button" onClick={togglePopup}>
@@ -31,11 +39,15 @@ function App() {
       </button>
       {isOpen && <Popup handleClose={togglePopup} saveColors={saveColors} initialColors={colors} />}
       <div className="color-display">
-        <div className="color-circle" style={{ backgroundColor: colors.fontColor }}></div>
-        <div className="color-circle" style={{ backgroundColor: colors.backgroundColor }}></div>
-        <div className="color-circle" style={{ backgroundColor: colors.buttonColor }}></div>
-        <div className="color-circle" style={{ backgroundColor: colors.buttonBorderColor }}></div>
-        <div className="color-circle" style={{ backgroundColor: colors.buttonsMouseoverColor }}></div>
+        {colorInfo.map((color, index) => (
+          <div className="color-item" key={index}>
+            <div className="color-circle" style={{ backgroundColor: color.value }}></div>
+            <div className="color-info">
+              <div className="color-label">{color.label}</div>
+              <div className="color-hex">{color.value}</div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

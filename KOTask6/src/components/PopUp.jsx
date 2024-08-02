@@ -32,48 +32,63 @@ const Popup = ({ handleClose, saveColors, initialColors }) => {
         <form onSubmit={handleSave}>
           <div>
             <label>Font Color</label>
-            <input
-              type="color"
-              name="fontColor"
-              value={colors.fontColor}
-              onChange={handleChange}
-            />
+            <div className="color-selector">
+              <span>{colors.fontColor}</span>
+              <input
+                type="color"
+                name="fontColor"
+                value={colors.fontColor}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div>
             <label>Background Color</label>
-            <input
-              type="color"
-              name="backgroundColor"
-              value={colors.backgroundColor}
-              onChange={handleChange}
-            />
+            <div className="color-selector">
+            <span>{colors.backgroundColor}</span>
+              <input
+                type="color"
+                name="backgroundColor"
+                value={colors.backgroundColor}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div>
             <label>Button Color</label>
-            <input
-              type="color"
-              name="buttonColor"
-              value={colors.buttonColor}
-              onChange={handleChange}
-            />
+            <div className="color-selector">
+            <span>{colors.buttonColor}</span>
+              <input
+                type="color"
+                name="buttonColor"
+                value={colors.buttonColor}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div>
             <label>Button Border Color</label>
-            <input
-              type="color"
-              name="buttonBorderColor"
-              value={colors.buttonBorderColor}
-              onChange={handleChange}
-            />
+            <div className="color-selector">
+            <span>{colors.buttonBorderColor}</span>
+              <input
+                type="color"
+                name="buttonBorderColor"
+                value={colors.buttonBorderColor}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div>
             <label>Buttons Mouseover Color</label>
-            <input
-              type="color"
-              name="buttonsMouseoverColor"
-              value={colors.buttonsMouseoverColor}
-              onChange={handleChange}
-            />
+            <div className="color-selector">
+            <span>{colors.buttonsMouseoverColor}</span>
+              <input
+                type="color"
+                name="buttonsMouseoverColor"
+                value={colors.buttonsMouseoverColor}
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="popup-actions">
             <button type="button" onClick={handleClose}>
